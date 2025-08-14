@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #FAFAF8;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 5rem;
+  background-color: white;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+header > img {
+  height: 3.7rem;
+}
+
+header > h1 {
+  font-weight: 450;
+}
+
+main {
+  padding: 30px 30px 10px;
+}
+
+.ingredient-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: 40px;
+}
+
+.ingredient-form > input {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 400px;
+}
+
+.ingredient-form > button {
+  font-family: 'Inter', sans-serif;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #141413;
+  color: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.ingredient-form > button::before {
+  content: '+';
+  margin-right: 5px;
+}
+
+.ingredients-list {
+  margin-bottom: 48px;
+}
+
+.ingredient-list-item {
+  color: #475467;
+  line-height: 28px;
+}
+
+.ingredient-list-item::first-letter {
+  text-transform: capitalize;
+}
+
+.get-recipe-container {
+  background: #F0EFEB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0.8rem 1.7rem;
+  margin-top: 2rem;
+}
+
+.get-recipe-container h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.get-recipe-container p {
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 20px;
+}
+
+.get-recipe-container > button {
+  font-family: 'Inter', sans-serif;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #D17557;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  color: #FAFAF8;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.recipe-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
